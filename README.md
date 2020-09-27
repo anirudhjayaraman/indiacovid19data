@@ -32,7 +32,7 @@ In order see which data sets are available:
 names(covid_datasets_inda)
 ```
 
-For example, if you want the case_time_series data set:
+For example, if you want the `case_time_series` data set:
 ```r
 case_time_series <- covid_datasets$case_time_series
 View(case_time_series)
