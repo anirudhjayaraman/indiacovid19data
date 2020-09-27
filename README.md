@@ -26,7 +26,7 @@ devtools::install_github("anirudhjayaraman/indiacovid19data")
 
 ## Quick demo
 
-Binding two factors via `fbind()`:
+To do:
 
 ``` r
 library(indiacovid19data)
