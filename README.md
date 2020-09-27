@@ -12,10 +12,10 @@ The data sets are loaded into an R list of R Data Frames.
 
 ## Installation
 
-You can install indiacovid19data like so:
+Installation is a one-time step. You can install indiacovid19data like so:
 
 ``` r
-devtools::install_github("anirudhjayaraman/indiacovid19data")
+devtools::install_github(repo = "anirudhjayaraman/indiacovid19data")
 ```
 
 ## Quick demo
