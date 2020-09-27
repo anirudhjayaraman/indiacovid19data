@@ -9,6 +9,7 @@ at one place with a simple function call.
 
 <!-- badges: start -->
 [![Travis build status](https://api.travis-ci.org/anirudhjayaraman/indiacovid19data.svg?branch=master)](https://travis-ci.org/github/anirudhjayaraman/indiacovid19data)
+[![Build status](https://ci.appveyor.com/api/projects/status/r66r2qbm5o1kco26/branch/master?svg=true)](https://ci.appveyor.com/project/anirudhjayaraman/indiacovid19data-x19vb/branch/master)
 <!-- badges: end -->
 
 
