@@ -1,10 +1,3 @@
-**NOTE:** This is a package created for sourcing all COVID-19 data available
-in CSV format at [COVID19-India API](https://api.covid19india.org/) at once.
-If I had more time outside of my I could rapidly add features to this library.
-For now however, I'm treading at my own pace on weekends. I hope it is
-useful to the extent of sourcing all available data on Indian COVID-19 data
-at one place with a simple function call.
-
 # indiacovid19data
 
 <!-- badges: start -->
@@ -13,8 +6,9 @@ at one place with a simple function call.
 <!-- badges: end -->
 
 
-This package provides a function to load all available COVID-19 India data
-into an R list containing R Data Frames.
+This package provides a function to load all CSV data available  at 
+[COVID19-India API](https://api.covid19india.org/) at once in your R environment.
+The data sets are loaded into an R list of R Data Frames.
 
 ## Installation
 
@@ -26,10 +20,21 @@ devtools::install_github("anirudhjayaraman/indiacovid19data")
 
 ## Quick demo
 
-To do:
+In order to store the data:
 
 ``` r
 library(indiacovid19data)
-source_data()
+covid_datasets_india <- source_data()
+```
+
+In order see which data sets are available:
+```r
+names(covid_datasets_inda)
+```
+
+For example, if you want the case_time_series data set:
+```r
+case_time_series <- covid_datasets$case_time_series
+View(case_time_series)
 ```
 
