@@ -1,4 +1,4 @@
-**NOTE: This is a package created for sourcing all COVID-19 data available
+**NOTE:** This is a package created for sourcing all COVID-19 data available
 in CSV format at [COVID19-India API](https://api.covid19india.org/) at once.
 If I had more time outside of my I could rapidly add features to this library.
 For now however, I'm treading at my own pace on weekends. I hope it is
