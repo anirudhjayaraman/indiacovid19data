@@ -29,7 +29,7 @@ covid_datasets_india <- source_data()
 
 In order see which data sets are available:
 ```r
-names(covid_datasets_inda)
+names(covid_datasets_india)
 ```
 
 For example, if you want the `case_time_series` data set:
