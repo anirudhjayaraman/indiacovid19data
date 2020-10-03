@@ -1,9 +1,18 @@
-
+#' Funciton to source Covid-19 India datasets from the COVID-19 India API
+#'
+#' @note This function does not require any parameters to be passed.
+#'
+#' @import magrittr
+#' @import stringr
+#' @import data.table
+#'
+#' @return this function returns a list of data-sets sourced from
+#' \url{https://api.covid19india.org/csv/latest/}
 source_data <- function(){
   # Required Libraries ========================================================
-  library(tidyverse)
-  library(data.table)
-
+  requireNamespace("magrittr")
+  requireNamespace("stringr")
+  requireNamespace("data.table")
   # ===========================================================================
   # COVID 19-India API: A volunteer-driven, crowdsourced database
   # for COVID-19 stats & patient tracing in India
@@ -44,11 +53,6 @@ source_data <- function(){
                           stop = nchar(matched)- nchar(".csv"))
 
   names(covid_datasets) <- dataset_names
-
-  # # storing individual datasets as objects
-  # for(i in seq_along(dataset_names)){
-  #   assign(dataset_names[i], covid_datasets[[i]])
-  # }
 
   return(covid_datasets)
 }
